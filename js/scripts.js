@@ -36,3 +36,13 @@ Phone.prototype.canIAfford = function () {
 
 googlePixel.canIAfford();
 onePlusOne.canIAfford();
+
+//Nowa funkcja
+Phone.prototype.applyDiscount = function (number) {
+	if (number > this.price) console.log('Bez przesady!');
+	else this.price -= number;
+};
+
+iPhoneS6.applyDiscount(1000);
+console.log('Nowa, atrakcyjna cena, tylko u nas!');
+iPhoneS6.printInfo();
